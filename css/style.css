@@ -1,0 +1,298 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* VARIABLES */
+
+:root {
+    --color-principal: #5D4037;
+    --color-secundario: #D7CCC8;
+    --color-acento: #8D6E63;
+    --color-texto: #212121;
+}
+
+
+/* GENERALES */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+
+/* NAVEGACIÓN */
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: var(--color-principal);
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 50px;
+}
+
+
+/* HOME */
+.hero-home {
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/foto1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.features {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 8px;
+}
+
+
+/* SERVICIOS */
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.section-title,
+.section-subtitle {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.servicio-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.servicio-card img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.servicio-info {
+    padding: 20px;
+}
+
+
+/* SOBRE NOS */
+
+.about-flex {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 0;
+}
+
+.about-image,
+.about-content {
+    flex: 1;
+}
+
+.valores {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+
+/* CONTACTO */
+
+.contacto-full-bg {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(93, 64, 55, 0.7), rgba(0, 0, 0, 0.7)), url('../img/foto2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+}
+
+.form-glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 15px;
+    color: white;
+    width: 100%;
+    max-width: 900px;
+}
+
+.grid-form {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 5px;
+}
+
+
+/* BOTONES */
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--color-acento);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid white;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: var(--color-principal);
+    color: white;
+    padding: 40px 5% 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 35px;
+    height: 35px;
+}
+
+.newsletter form {
+    display: flex;
+    gap: 10px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    header nav,
+    .footer-content,
+    .about-flex,
+    .valores {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .features-grid,
+    .servicios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-form {
+        grid-template-columns: 1fr;
+    }
+    .grid-form button, .form-group {
+        grid-column: span 1;
+    }
+    .form-glass {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpintería Artesanal | Contacto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo"><img src="img/logo.png" alt="Logotipo Carpintería"></div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="sobrenos.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contacto-full-bg">
+        <div class="container">
+            <div class="form-glass">
+                <h1>Contacta con nosotros</h1>
+                <p>Pídenos presupuesto sin compromiso.</p>
+
+                <form id="formulario-contacto" class="grid-form" novalidate>
+                    <div class="form-group">
+                        <label for="nombre">Nome*</label>
+                        <input type="text" id="nombre" name="nombre" required aria-required="true">
+                        <span class="error-msg" id="error-nombre"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                        <span class="error-msg" id="error-email"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="empresa">Empresa</label>
+                        <input type="text" id="empresa" name="empresa">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="asunto">Asunto*</label>
+                        <select id="asunto" name="asunto" required aria-required="true">
+                            <option value="">Seleccione una opción...</option>
+                            <option value="presupuesto">Presupuesto</option>
+                            <option value="reparacion">Reparación</option>
+                            <option value="mueble-medida">Mueble a medida</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                        <span class="error-msg" id="error-asunto"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="obxectivo">Obxectivo*</label>
+                        <textarea id="obxectivo" name="obxectivo" rows="5" required aria-required="true"></textarea>
+                        <span class="error-msg" id="error-obxectivo"></span>
+                    </div>
+
+                    <button type="submit" class="btn">Enviar Mensaxe</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook">
+                    <img src="img/facebook.png" alt="Facebook">
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <img src="img/instagram.png" alt="Instagram">
+                </a>
+                <a href="#" aria-label="TikTok">
+                    <img src="img/tiktok.png" alt="TikTok">
+                </a>
+                <a href="#" aria-label="Whatsapp">
+                    <img src="img/whatsapp.png" alt="Whatsapp">
+                </a>
+            </div>
+
+            <div class="newsletter">
+                <h3>Suscríbete a nuestras ofertas</h3>
+                <form id="form-suscripcion">
+                    <input type="email" placeholder="Tu email" aria-label="Correo electrónico para suscripción"
+                        required>
+                    <button type="submit" class="btn">Unirse</button>
+                </form>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 Carpintería - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/validacion.js"></script>
+</body>
+
+</html>
